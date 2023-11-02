@@ -17,11 +17,11 @@ def get_product_list(page, campaign_id, access_token):
 
     Args:
         page (str): Номер страницы
-        campaign_id
-        access_token
+        campaign_id (str): Индивидуальный ID номер компании.
+        access_token (str): Персональный токен для доступа к Яндекс
 
     Returns:
-        list: Возвращает Json.
+        list: Возвращает список продуктов.
 
     """
     endpoint_url = "https://api.partner.market.yandex.ru/"
