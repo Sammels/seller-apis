@@ -20,7 +20,7 @@ def get_product_list(last_id, client_id, seller_token):
         seller_token (str): Персональный токен продавца
 
     Returns:
-        str: Возвращает json с ключом result
+        dict: Возвращает словарь с ключом result
     """
     url = "https://api-seller.ozon.ru/v2/product/list"
     headers = {
