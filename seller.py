@@ -19,8 +19,23 @@ def get_product_list(last_id, client_id, seller_token):
         client_id (str): ID клиента
         seller_token (str): Персональный токен продавца
 
-    Returns:
-        dict: Возвращает словарь с ключом result
+    Returns: Возвращает словарь
+        dict:
+        {
+        "result":
+        {
+            "items":
+            [
+            {
+                "product_id": 223681945,
+                "offer_id": "136748"
+            }
+        ],
+        "total": 1,
+        "last_id": "bnVсbA=="
+        }
+
+        }
     """
     url = "https://api-seller.ozon.ru/v2/product/list"
     headers = {
